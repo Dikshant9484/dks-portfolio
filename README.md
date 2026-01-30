@@ -2,8 +2,6 @@
 
 This repository contains a beautiful, responsive personal portfolio built using **React**, **Vite**, and **TailwindCSS**. The project showcases modern web development techniques including smooth animations, responsive layouts, and interactive UI components.
 
-### Want to watch this?
-[![Check this out](https://img.youtube.com/vi/LGdPMf-SgBA/maxresdefault.jpg)](https://youtu.be/LGdPMf-SgBA)
 
 
 ## Features
@@ -20,81 +18,104 @@ This repository contains a beautiful, responsive personal portfolio built using 
 - **TailwindCSS:** Utility-first CSS framework.
 - **JavaScript (ES6+):** Modern JavaScript features and best practices.
 
-## Installation
+✨ Features
 
-1. **Clone the repository:**
+Modern Hero Intro Section
 
-   ```bash
-   git clone https://github.com/your-username/your-portfolio.git
-   cd your-portfolio
-   ```
+About & Skills Section
 
-2. **Install dependencies:**
+Featured Projects with Images
 
-   ```bash
-   npm install
-   ```
+Contact Form (EmailJS Integration)
 
-3. **Start the development server:**
+Social Media Footer with Icons
 
-   ```bash
-   npm run dev
-   ```
+Responsive Design (Mobile + Desktop)
 
-   The application should now be running at [http://localhost:5173](http://localhost:5173).
+Smooth Scroll & Animations
 
-## Build
+Dark Themed UI with Glassmorphism Effects
 
-To create a production build, run:
+🛠 Tech Stack
 
-```bash
-npm run build
-```
+Frontend: React, Vite, Tailwind CSS
 
-Then, you can preview the production build with:
+Icons: React Icons
 
-```bash
-npm run preview
-```
+Email Service: EmailJS
 
-## Folder Structure
+Deployment: Vercel / Netlify (optional)
 
-```
-your-portfolio/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── MobileMenu.jsx
-│   │   ├── LoadingScreen.jsx
-│   │   └── sections/
-│   │       ├── Home.jsx
-│   │       ├── About.jsx
-│   │       ├── Projects.jsx
-│   │       └── Contact.jsx
-│   ├── index.css          # Tailwind base styles and global styles
-│   ├── App.jsx
-│   └── main.jsx
-├── package.json
-├── vite.config.js
-└── README.md
-```
+📁 Folder Structure
+src/
+ ├─ assets/
+ │   └─ projects/
+ ├─ components/
+ │   ├─ Navbar.jsx
+ │   ├─ Footer.jsx
+ │   ├─ RevealOnScroll.jsx
+ │   └─ sections/
+ │       ├─ Home.jsx
+ │       ├─ About.jsx
+ │       ├─ Projects.jsx
+ │       └─ Contact.jsx
+ ├─ App.jsx
+ └─ main.jsx
 
-## Customization
+⚙️ Installation & Setup
+1. Clone Repository
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
 
-- **Tailwind CSS:** Modify the `index.css` file or add custom classes to further tweak the design.
-- **Components:** Edit individual components in the `src/components/` folder to update content or styling.
-- **Sections:** Update content in the `src/components/sections/` directory to showcase your personal projects, about info, and contact details.
+2. Install Dependencies
+npm install
 
-## Contributing
+3. Start Development Server
+npm run dev
 
-Contributions are welcome! Please open an issue or submit a pull request with improvements.
+📧 EmailJS Setup (Contact Form)
 
-## License
+Create account at https://emailjs.com
 
-This project is open source and available under the [MIT License](LICENSE).
+Add Email Service (Gmail recommended)
 
----
+Create Email Template with variables:
 
+{{name}}
+{{email}}
+{{message}}
+
+
+Copy:
+
+Service ID
+
+Template ID
+
+Public Key
+
+Create .env in project root:
+
+VITE_SERVICE_ID=your_service_id
+VITE_TEMPLATE_ID=your_template_id
+VITE_PUBLIC_KEY=your_public_key
+
+
+Restart server.
+
+🧩 Customization
+Change Profile Image
+src/assets/profile.png
+
+Add Projects
+
+Edit:
+
+src/components/sections/Projects.jsx
+
+Social Links
+
+Edit:
+
+src/components/Footer.jsx
 Happy coding and enjoy building your professional portfolio!
